@@ -19,11 +19,11 @@
 # Change the file extension to match the format (.xml for XML, etc...)
 #
 ###
-title: "TODO - Your title"
-abbrev: "TODO - Abbreviation"
-category: info
+title: "Serialization for Hypertext Queries"
+abbrev: "SHQ"
+category: info # or standards-track?
 
-docname: draft-todo-yourname-protocol-latest
+docname: draft-ietf-httpapi-shq-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
