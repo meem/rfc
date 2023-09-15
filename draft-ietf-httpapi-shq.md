@@ -52,6 +52,19 @@ normative:
 informative:
 
 https://hudlow.github.io/query-parse-suite/
+https://github.com/hudlow/query-parse-suite/
+
+TODO: In the main content, we need to tie this back to the historical (and still current at times) usage of web browsers using query parameters with respect to forms.
+
+TODO: does the fetch API support query parameters?
+
+SCOPE: leave casting aspects out
+
+Note: We would prefer to not have error cases (i.e., always have a successful
+      deserialization of any query string), but certain scenarios may be too
+      dangerous
+
+TODO: consider whether the RFC needs to take a stand on preserving order for query parameters
 
 --- abstract
 
@@ -73,6 +86,7 @@ https://hudlow.github.io/query-parse-suite/
   a wide variety of popular web frameworks. This document does not prescribe an
   implementation, but aims to be straightforward to implement and verify
   conformance.
+
  
 # Conventions and Definitions
 
