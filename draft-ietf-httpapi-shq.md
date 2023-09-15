@@ -32,11 +32,9 @@ v: 3
 area: AREA
 workgroup: WG Working Group
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - TODO
 venue:
-  group: WG
+  group: HTTP-API WG
   type: Working Group
   mail: WG@example.com
   arch: https://example.com/WG
@@ -45,27 +43,37 @@ venue:
 
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
-    email: your.email@example.com
+    fullname: Peter Memishian (meem) and Dan Hudlow
+    organization: IBM
+    email: meem@ibm.com, dhudlow@us.ibm.com
 
 normative:
 
 informative:
 
+https://hudlow.github.io/query-parse-suite/
 
 --- abstract
 
-TODO Abstract
-
-
+  This document comprehensively specifies how to parse and interpret HTTP query
+  strings to facilitate interoperability.
+  
 --- middle
 
 # Introduction
 
-TODO Introduction
+  Despite being an essential aspect of modern HTTP APIs, the HTTP query string
+  is woefully under-specified. As a result, web frameworks have made ad-hoc and
+  often surprising choices for how to parse and interpret the contents of a query 
+  string. This results in wide-ranging interopability problems which ultimately
+  hinder the adoption, robustness, and evolution of HTTP-based APIs.
 
-
+  This document describes how to parse and interpret HTTP query strings in a
+  manner that is compatible with RFC3986 and is informed by experimentation with
+  a wide variety of popular web frameworks. This document does not prescribe an
+  implementation, but aims to be straightforward to implement and verify
+  conformance.
+ 
 # Conventions and Definitions
 
 {::boilerplate bcp14-tagged}
